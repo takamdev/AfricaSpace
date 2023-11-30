@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfricaSpace</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/index/index.css">
+    <link rel="stylesheet" href="css/lib/all.min.css">
+    <link rel="stylesheet" href="css/framwork/bootstrap.min.css">
+</head>
+<body>
+ 
+
+
+<!-- Modal pour la connexion -->
+<div class="modal fade modal-xl" id="connexion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Se Connecter</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div  class="modal-body">
+        
+        <form>
+          <h1>Connecter-vous</h4>
+          <div>
+             <a href="#"><i class="fa-brands fa-google"></i></a>
+             <a href="#"><i class="fa-brands fa-facebook"></i></a>
+             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+             <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <p>entrez vos information personnelle pour vous connecter</p>
+          <input type="email" id="name" placeholder="toto@example.com"  required>
+          <input type="password" id="password" placeholder="entrez le mot de passe" style="margin-top: 20px;" required>
+          <label class="d-flex gap-3"><button class="redirigerConnexion" type="button" data-bs-toggle="modal"  data-bs-target="#creationDeCompte">vous n`avez pas de compte?</button><a href="../index.html">Acceuil</a></label>
+          <button class="soumet" type="submit">Connexion</button>   
+          </form>
+      </div>
+      <button type="button" class="btn btn-dark ms-auto me-1 mb-1" data-bs-dismiss="modal" style="width: 100px;">Fermer</button>
+    </div>
+  </div>
+</div>
+
+<!-- modal pour la creation de compte -->
+
+<div class="modal fade modal-xl" id="creationDeCompte" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Cree un Compte</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div  class="modal-body">
+        
+        <form>
+          <h1>Cree Un Compte</h4>
+          <div>
+             <a href="#"><i class="fa-brands fa-google"></i></a>
+             <a href="#"><i class="fa-brands fa-facebook"></i></a>
+             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+             <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <P>entrez vos information personnelle pour cree le Compte</P>
+          <input type="text" id="name" placeholder="entrez votre nom" style="margin-top: 20px;" required>
+          <input type="text" id="UserName" placeholder="Choisir un nom d`utilisateur" required>
+          <input type="email" id="email" placeholder="toto@example.com" required>
+          <input type="password" id="password" placeholder="creez un mot de passe" required>
+          <input type="password" id="password" placeholder="repeter le mot de passe" required>
+          <label class="d-flex gap-3"><button class="redirigerConnexion" type="button" data-bs-toggle="modal"  data-bs-target="#connexion">vous avez deja un compte?</button><a href="../index.html">Acceuil</a></label>
+         
+          <button class="soumet" type="submit">Inscription</button>   
+          </form>
+        
+  
+      </div>
+      <button type="button" class="btn btn-dark ms-auto me-1 mb-1" data-bs-dismiss="modal" style="width: 100px;">Fermer</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+    <main class="container-fluid">
+      <header>
+
+        <nav class="navbar navbar-expand-lg container-fluid">
+            <div class="container-fluid w-100">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" style="width: 70px;" alt="image"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler"><i class="fa-solid fa-bars" style="color: yellow; transform: scale(2);"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Acceuil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/oeuvre.html">Oeuvres</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="pages/contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class=" nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Espace Artiste
+                    </a>
+                    <ul class="dropdown-menu" style="background-image: url(img/PSX_20210915_191533-1.jpg);">
+                    <li><!-- Button trigger modal -->
+                      <button type="button" class="dropdown-item" data-bs-toggle="modal"  data-bs-target="#connexion" >
+                       Se Connecter
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="dropdown-item" data-bs-toggle="modal"  data-bs-target="#creationDeCompte" >
+                       Cree un Compte
+                       </button>
+                    </li>
+                    
+                    </ul>
+                </li>
+                </ul>
+            
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="recherche par:nom de l`artiste, titre,style artistitique ...">
+                <datalist id="datalistOptions">
+                <option value="MASQUE AFRICAIN De Cote D`Ivoire">
+                <option value="L’île Heureuse by Mahmoud said">
+                <option value="Sculture">
+                <option value="peinture">
+                
+                
+                
+            
+                </datalist>
+               <button class="btn text-white fw-bold fs-2">search</button>
+               
+            </div>
+            </div>
+        </nav>
+        
+    </header>  
+  <div class="Acceuil container row ms-auto me-auto mt-2">
+      <p class="col-sm-12 col-md-12  col-lg-12 pt-5">
+       <span>Analyse : L’Afrique, dernière frontière du marché de l’art ?</span> <br>
+        Longtemps réduit à des stéréotypes essentialistes, l’art africain s’expose désormais dans les plus prestigieuses galeries internationales. De l’émergence des artistes contemporains à l’univers confidentiel de l’art ancien, analyse d’un marché en pleine ébullition.
+      </p>
+    
+    </div>
+      <!-- carousel de presantation de qyelque oeuvres d`art------------------------------------------------------------------------------------  -->
+      
+      <div class="bordu">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/masque/masquePresantation.jpg" class="d-block " alt="image">
+              <div class="carousel-caption d-none d-md-block">
+                  <h3>MASQUE AFRICAIN</h3>
+                  
+              </div>
+              
+            </div>
+            <div class="carousel-item">
+              <img src="img/peinture/peinture.jpg" class="d-block "  alt="image">
+              <div class="carousel-caption d-none d-md-block">
+                  <h3>peinture d`art Africaine</h3>
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/tabouret/tabouret.jpg" class="d-block " alt="image">
+              <div class="carousel-caption d-none d-md-block">
+                  <h3>Tabouret Sculpté</h3>
+                  
+              </div>
+            </div> 
+             <div class="carousel-item">
+              <img src="img/scultureHumaine/Amour-de-la-lecture.jpg" class="d-block " alt="image">
+              <div class="carousel-caption d-none d-md-block">
+                  <h3>Sculture Humaine</h3>
+                 
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/ScultureAnimal/Elephant.jpg" class="d-block " alt="image">
+              <div class="carousel-caption d-none d-md-block">
+                  <h3>Sculture Animal</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/instrument-de-musique/intru1.jpg" class="d-block "alt="image">
+              <div class="carousel-caption d-none d-md-block">
+                  <h3>Instrument de Musique</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/photographique/photograph1.jpg" class="d-block "alt="image">
+              <div class="carousel-caption d-none d-md-block">
+                  <h3>Photographique d`art Africaine</h3>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+       </div>
+  
+      <h3 class="fw-medium text-white text-center border-bottom fst-italic">quelques oeuvres d`art et leurs histoires</h3>
+        
+      <!-- carousel de presantation de qyelque oeuvres d`art-----------------------------------------------------------------------------  -->
+  <section class="oeuvres row container me-auto ms-auto mt-5">
+   
+       <div class="card col-md-12 mt-md-4 col-lg-6 mt-lg-5 mt-5" id="oeuvre" >
+       
+      <img src="img/art1.jpg" class="card-img-top"  alt="image">
+      <div class="card-body">
+        <p class="card-text">
+          <span>L’île Heureuse by Mahmoud said</span> <br>
+         
+         Mahmoud Saïd est né à Alexandrie le 8 avril 1897, fils de Mohamed Pacha Saïd, premier ministre à une période critique de l’histoire égyptienne (1910-1914), témoin de la montée du nationalisme qui finit par installer l’indépendance du pays. Saïd a été élevé dans un milieu aristocratique privilégié et a été éduqué par des tuteurs privés étrangers.
+        
+        </p>
+      </div>
+    </div>
+    
+   
+  
+      <div class="card col-md-12 mt-md-4 col-lg-6 mt-lg-5 mt-5" >
+        
+     <img src="img/art2.jpg" class="card-img-top" alt="image">
+     <div class="card-body">
+     
+       <p class="card-text">
+        <span>Excerpt (citadel) by Julie Mehretu</span> <br>
+        Née le 28 novembre 1970 à Addis-Abeba, d’un père éthiopien et d’une mère américaine, elle y vit jusqu’en 1977, lorsque sa famille quitte l’Afrique pour s’installer aux États-Unis. Ses parents, raconte-t-elle, « ont reconstitué l’atmosphère d’une maisonnée éthiopienne dans le Michigan »
+        
+      </p>
+     </div>
+   </div>
+  
+  </section>
+
+  <section class="oeuvres row container me-auto ms-auto">
+    
+       <div class="card col-md-12 mt-md-4 col-lg-6 mt-lg-5 mt-5 " >
+       
+      <img src="img/art3.png" class="card-img-top"  alt="image">
+      <div class="card-body">
+        <p class="card-text">
+          <span> Arabwith Jug by Irma Stern</span> <br> 
+          En 1945, Irma Stern a visité Zanzibar pour la deuxième fois. Elle a passé un peu plus de trois mois à Stone Town, qui comprenait le mois sacré du Ramadan en août. Stern revint avec une série de peintures.Selon Dubow, Zanzibar a provoqué “la réalisation la plus complète de ses pouvoirs”: <br>
+          Stern était particulièrement attirée par les hommes arabes barbus.
+        
+        </p>
+      </div>
+    </div>
+  
+
+    
+    <div class="card col-md-12 mt-md-4 col-lg-6 mt-lg-5 mt-5" >
+     
+      <img src="img/font.jpg" class="card-img-top" alt="image">
+      <div class="card-body">
+      
+        <p class="card-text">
+          <span>le musée Horniman va rendre 72 artefacts au Nigéria</span> <br>
+          La plaque béninoise du chef Uwangue et des commerçants portugais fait partie des objets restitués au Nigéria.
+          Un musée londonien déclare avoir accepté de restituer au Nigéria des objets pillés au XIXe siècle au Royaume du Bénin .
+        
+        </p>
+      </div>
+   </div>
+   
+  </section>
+       
+       
+      
+ 
+  
+        <div class=" footer container-fluid">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <img src="img/logo.png" alt="image" style="width: 70px;">
+              </a>
+              <span class="mb-3 mb-md-0  fw-bold text-white">&copy; ART AFRICAIN - MASQUES D'AFRIQUE <i>2023</i> </span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end">
+              <li class="nav-item"><a href="#" class="nav-link px-2">Acceuil</a></li>
+              <li class="nav-item"><a href="pages/oeuvre.html" class="nav-link px-2">Oeuvres</a></li>
+              <li class="nav-item">
+                <button type="button" data-bs-toggle="modal"  data-bs-target="#creationDeCompte" >
+                  Cree un Compte
+                  </button>
+              </li>
+              <li class="nav-item"><a href="pages/contact.html" class="nav-link px-2">Contact</a></li>
+            </ul>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-twitter" style="color: white;"></i></svg></a></li>
+              <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram" style="color: white;"></i></a></li>
+              <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-facebook" style="color: white;"></i></a></li>
+            </ul>
+          </footer>
+        </div>
+    </main>
+
+
+
+    
+ 
+
+
+
+
+
+
+
+
+
+   <script>
+          const myModal = document.getElementById('myModal')
+      const myInput = document.getElementById('myInput')
+
+      myModal.addEventListener('shown.bs.modal', () => {
+        myInput.focus()
+      })
+   </script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

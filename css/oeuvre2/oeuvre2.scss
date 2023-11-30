@@ -1,0 +1,77 @@
+@import "../components/mixins";
+
+header{
+    @extend .headerStyle;
+}
+main{
+    article{
+        .img-fluid{
+            height: 510px;
+            width: 400px;
+        }
+        margin-top: 100px;
+        .ajoutPanier{
+            @extend .ajoutPanier;
+        }
+        
+    }
+   
+   
+       
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    main{
+        article{
+            .img-fluid{
+                
+                width: 100%;
+            }
+           
+            
+        }
+    }    
+}
+
+
+
+
+
+
+@media screen and (max-width:980px) {
+    header{
+        .panier{
+            position: absolute;
+            top: 25px;
+            right: 100px;
+            transform: scale(2);
+            margin-left:100px;
+            margin-right: 30px; 
+            color: yellow;
+        }
+    }
+    main{
+        .ajoutPanier{
+            width: 150px;
+            margin-left: 27%;
+        }
+    }
+
+}

@@ -1,0 +1,230 @@
+@import "../components/mixins";
+
+
+body{
+   
+    background-image: url(../../img/font.jpg);
+    
+    padding: 0;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: cover;
+   
+    font-weight: bold;
+    
+}
+main{
+   &>article{
+    .card-text{
+      
+            position: relative;
+            height: 180px;
+         }
+   }
+  
+    section.oeuvres{
+        .card{
+            border-image: url(../../img/bordur.jpg) 10/10px;
+            height: 620px;
+            transition: all ease-in-out .5s;
+            &:hover{
+               
+                    box-shadow: 1px -20px 20px 20px #3d0000d1;
+                    transform: scale(1.01);
+                    border-radius: 10px;
+                
+            }
+            .card-text{
+               position: relative;
+               height: 280px;
+            }
+            
+            
+        }
+        img{
+            padding-top:10px;
+            height: 300px;
+        }
+        
+     p{
+           
+        
+        span{
+            font-size: 30px;
+            font-weight: bold;
+           }
+     }
+     
+    }
+    
+    .lirePlus{
+        @extend .communLire;
+         
+    }
+    
+    
+    .lire{
+        @extend .communLire;
+       
+    }
+
+.communLire{
+    
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+   
+    font-size: 20px; 
+        font-weight: 700;
+        text-decoration: none;
+        transition: all ease-in-out .5s;
+        &:hover{
+           color: red;
+        }
+}
+
+   
+
+    
+
+    .Acceuil{
+       
+        color: white;
+        font-weight: 300;
+        font-size: 20px;
+        text-align: center;
+        text-align: justify;
+       
+       
+        span{
+            font-size: 30px;
+            font-weight: bold;
+        }
+       .card-text{
+        text-align: center;
+        text-align: justify;
+        text-indent: 20px;
+        padding-left: 20px;
+        position: relative;
+        height: 140px;
+       
+        .lireOeuvre1{
+        
+            color: white;
+            @extend .communLire;
+            bottom: 50px;
+            right: 20px
+           
+            
+            
+            
+         }
+
+       }
+
+    }
+  
+   
+}
+header{
+    
+   
+    
+    .navbar{
+        background-image: url(../../img/PSX_20210915_191533-1.jpg);
+        width: 100%;
+        transition: all ease-in-out .5s;
+        &:hover{
+            box-shadow: 1px -20px 20px 20px #3d0000d1;
+            transform: scale(1.01);
+            border-radius: 10px;
+        }
+
+        input{
+            &::placeholder{
+                opacity: .5;
+            }
+        }
+       
+        a:not(a.dropdown-item){
+         font-weight: bold;
+         color: white;
+        
+         &:visited{
+          color: white;
+         }
+         &:hover{
+            color: yellow;
+           
+         }
+         
+        }
+        button.dropdown-item{
+            color: white;
+            font-weight: bold;
+            &:hover{
+               background-color: initial;
+               color: yellow;
+             }
+         }
+     
+     }
+}
+
+.bordu{
+    background-image: url(../../img/bordur.jpg);
+    padding: 10px;
+    height: 600px;
+    margin-bottom: 50px;
+   
+    #carouselExampleAutoplaying{
+       background-image: url(../../img/font.jpg);
+     
+     
+     
+     
+         img{
+             width: 100%;
+             height: 580px;
+             filter: brightness(70%);
+         }
+         
+     }
+}
+ @media screen and (max-width:768px) {
+    
+    main{
+       
+   
+        .Acceuil{
+            .card-text{
+                .lireOeuvre1{
+                    position: absolute;
+                       
+                       bottom: 15px;
+                     
+                      
+                       
+                       
+                       
+                    }
+            }
+            
+        }
+
+        section.oeuvres{
+            p{
+                span{
+                    font-size: 15px;
+                    font-weight: bold;
+                   }
+             }
+        }
+        
+       
+    }
+
+
+
+ }

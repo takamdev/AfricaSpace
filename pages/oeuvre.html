@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfricaSpace</title>
+    <link rel="icon" href="../img/logo.png">    
+    <link rel="stylesheet" href="../css/oeuvre/oeuvre.css">
+    <link rel="stylesheet" href="../css/lib/all.min.css">
+    <link rel="stylesheet" href="../css/framwork/bootstrap.min.css">
+</head>
+<body>
+  <!-- Modal pour la connexion -->
+<div class="modal fade modal-xl" id="connexion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Se Connecter</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div  class="modal-body">
+        
+        <form>
+          <h1>Connecter-vous</h4>
+          <div>
+             <a href="#"><i class="fa-brands fa-google"></i></a>
+             <a href="#"><i class="fa-brands fa-facebook"></i></a>
+             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+             <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <p>entrez vos information personnelle pour vous connecter</p>
+          <input type="email" id="name" placeholder="toto@example.com"  required>
+          <input type="password" id="password" placeholder="entrez le mot de passe" style="margin-top: 20px;" required>
+          <label class="d-flex gap-3"><button class="redirigerConnexion" type="button" data-bs-toggle="modal"  data-bs-target="#creationDeCompte">vous n`avez pas de compte?</button><a href="../index.html">Acceuil</a></label>
+          <button class="soumet" type="submit">Connexion</button>   
+          </form>
+      </div>
+      <button type="button" class="btn btn-dark ms-auto me-1 mb-1" data-bs-dismiss="modal" style="width: 100px;">Fermer</button>
+    </div>
+  </div>
+</div>
+
+<!-- modal pour la creation de compte -->
+
+<div class="modal fade modal-xl" id="creationDeCompte" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Cree un Compte</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div  class="modal-body">
+        
+        <form>
+          <h1>Cree Un Compte</h4>
+          <div>
+             <a href="#"><i class="fa-brands fa-google"></i></a>
+             <a href="#"><i class="fa-brands fa-facebook"></i></a>
+             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+             <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <P>entrez vos information personnelle pour cree le Compte</P>
+          <input type="text" id="name" placeholder="entrez votre nom" style="margin-top: 20px;" required>
+          <input type="text" id="UserName" placeholder="Choisir un nom d`utilisateur" required>
+          <input type="email" id="email" placeholder="toto@example.com" required>
+          <input type="password" id="password" placeholder="creez un mot de passe" required>
+          <input type="password" id="password" placeholder="repeter le mot de passe" required>
+          <label class="d-flex gap-3"><button class="redirigerConnexion" type="button" data-bs-toggle="modal"  data-bs-target="#connexion">vous avez deja un compte?</button><a href="../index.html">Acceuil</a></label>
+         
+          <button class="soumet" type="submit">Inscription</button>   
+          </form>
+        
+  
+      </div>
+      <button type="button" class="btn btn-dark ms-auto me-1 mb-1" data-bs-dismiss="modal" style="width: 100px;">Fermer</button>
+    </div>
+  </div>
+</div>
+
+
+    <div class="triage fixed-top">
+      <nav id="navbar-example3" class="h-100 flex-lg-column align-items-stretch pe-4 border-end">
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link" href="#item-1">Sculture</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-2" href="#item-1-1">Masque Sculpté</a>
+            <a class="nav-link ms-2" href="#item-1-2">Sculture Animal</a>
+            <a class="nav-link ms-2" href="#item-1-3">Tabouret Sculpté</a>
+            <a class="nav-link ms-2" href="#item-1-4">Sculture Humaine</a>
+          </nav>
+          <a class="nav-link" href="#item-2">Item 2</a>
+          <a class="nav-link" href="#item-3">Item 3</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-2" href="#item-3-1">Item 3-1</a>
+            <a class="nav-link ms-2" href="#item-3-2">Item 3-2</a>
+          </nav>
+        </nav>
+      </nav>
+    </div>
+
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid w-100">
+            <a class="navbar-brand" href="#"><img src="../img/logo.png" style="width: 70px;" alt="image"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler"><i class="fa-solid fa-bars" style="color: yellow; transform: scale(2);"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto  mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " href="../index.html">Acceuil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">Oeuvres</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../pages/contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown ms-3">
+                    <a class=" nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Espace Artiste
+                    </a>
+                    <ul class="dropdown-menu" style="background-image: url(../img/PSX_20210915_191533-1.jpg);">
+                      <li><!-- Button trigger modal -->
+                        <button type="button" class="dropdown-item" data-bs-toggle="modal"  data-bs-target="#connexion" >
+                         Se Connecter
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="dropdown-item" data-bs-toggle="modal"  data-bs-target="#creationDeCompte" >
+                         Cree un Compte
+                         </button>
+                      </li>
+                    </ul>
+                </li>
+
+                </ul>
+            
+                <input class="form-control ms-3" list="datalistOptions" id="exampleDataList" placeholder="recherche par: titre,style artistitique ...">
+                <datalist id="datalistOptions">
+                    <option value="MASQUE AFRICAIN De Cote D`Ivoire">
+                    <option value="L’île Heureuse by Mahmoud said">
+                    <option value="Sculture">
+                    <option value="peinture">
+                    
+                    
+                    
+                </datalist>
+               <button class="btn text-white fw-bold fs-2">search</button>
+              
+               
+            </div>
+            
+            </div>
+            <i class="panier fa-solid fa-cart-shopping"></i>
+        </nav>
+        
+    </header>  
+
+
+      
+      
+ 
+    <main>
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2 container-fluid" tabindex="0">
+        <div id="item-1">
+         
+        </div>
+        <section id="item-1-1">
+          <img src="../img/masque/masquePresantation.jpg" style="width: 100%; height: auto; margin-top: 10px;" alt="image">
+          <!-- image agerer -->
+         
+             
+               <p class="container me-auto ms-auto display-4 mt-3 text-center fw-bold">
+                   DÉCOUVREZ  NOS MASQUES <br> AFRICAINS DE CÔTE D'IVOIRE
+               </p>
+               
+               <article>
+                 <section class="container ms-auto me-auto">
+                     <div class="card mb-3">
+                         <div class="row g-0">
+                           <div class="col-md-4">
+                             <img src="../img/masque/masque1.jpg" class="img-fluid rounded-start" alt="image">
+                           </div>
+                           <div class="col-md-8">
+                             <div class="card-body">
+                               <h4 class="card-title fw-bold ms-5">MASQUE AFRICAIN BOUCLIER (CÔTE D'IVOIRE)</h4>
+                               <p class="card-text">Masque bouclier en bois patiné.</p>
+                               <p class="card-text">
+                                 Le peuple Sénoufo, très important de Côte d’Ivoire n'a pas une réputation de reconquérant, mais de fins stratèges, voir de diplomates.
+         
+                                 Cet imposants bouclier en bois est orné de sculptures en bas relief. Le motif central est recouvert de kaolin.
+         
+                                 Sur sa face intérieur, une grosse poignée permet de le tenir fermement.
+                               </p>
+         
+                               <a href="../pages/pageIndividuelle/bouclier.html" class="VoirPlus">Voir Plus</a>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                      
+                 </section>
+             </article>  
+         
+         
+         
+         
+               <article>
+                   <section class="container ms-auto me-auto">
+                       <div class="card mb-3">
+                           <div class="row g-0">
+                             <div class="col-md-4">
+                               <img src="../img/masque/marque2.jpg" class="img-fluid rounded-start" alt="image">
+                             </div>
+                             <div class="col-md-8">
+                               <div class="card-body">
+                                 <h4 class="card-title fw-bold ms-5">MASQUE AFRICAIN BAOULE LUNAIRE (CÔTE D'IVOIRE)</h4>
+                                 <p class="card-text">Masque en bois patiné.</p>
+                                 <p class="card-text">
+                                   Cette sculpture représente un personnage portant 2 masques Baoulés qui font référence au soleil avec <br>
+         
+                                   des triangles blancs en kaolin qui font ressortir les rayons sur leur périphéries. <br>
+         
+                                   Chacun des masques , ornés d'un visage, est surmonté de cornes de buffle (symbole de fertilité). <br>
+                                 </p>
+         
+                                 <a href="../pages/pageIndividuelle/baouleLunaire.html" class="VoirPlus">Voir Plus</a>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                        
+                   </section>
+               </article>  
+               
+         
+         
+         
+               <article>
+                 <section class="container ms-auto me-auto">
+                     <div class="card mb-3">
+                         <div class="row g-0">
+                           <div class="col-md-4">
+                             <img src="../img/masque/masque3.jpg" class="img-fluid rounded-start" alt="image">
+                           </div>
+                           <div class="col-md-8">
+                             <div class="card-body">
+                               <h4 class="card-title fw-bold ms-5">MASQUE AFRICAIN DAN (CÔTE D'IVOIRE)</h4>
+                               <p class="card-text">Masque en bois  monté sur socle en métal. </p>
+                               <p class="card-text">
+                                 Ce magnifique masque possède des traits fins. Une boule de cauris fixée sur le front lui donne une grande valeur. <br>
+                                 De longues nattes tressées forment la chevelure et une grande barbe orne le bas du visage. <br>
+         
+                                 Les dents, le contour des yeux et 2 grandes scarifications sont réalisés en métal. <br>
+         
+                                 Les Dan sont parmi les ethnies à avoir été les plus prolifiques en masques.  <br>
+         
+                                 Ils sont utilisés pour les divertissements lors de danses ou de chants. <br>
+         
+                                 Les plus impressionnants d'entre eux font régner la paix dans les villages dés leurs apparition <br>
+                               </p>
+         
+                               <a href="../pages/pageIndividuelle/socle.html" class="VoirPlus">Voir Plus</a>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                     
+                 </section>
+             </article>  
+         
+         
+         
+         
+         
+         
+         
+         
+             <article>
+               <section class="container ms-auto me-auto">
+                   <div class="card mb-3">
+                       <div class="row g-0">
+                         <div class="col-md-4">
+                           <img src="../img/masque/masque4.jpg" class="img-fluid rounded-start" alt="image">
+                         </div>
+                         <div class="col-md-8">
+                           <div class="card-body">
+                             <h4 class="card-title fw-bold ms-5">MASQUE AFRICAIN DAN (OUEST DE LA CÔTE D'IVOIRE)</h4>
+                             <p class="card-text">Masque en bois patiné.</p>
+                             <p class="card-text">
+                               Les Dan sont parmi les ethnies à avoir été les plus prolifiques en masques.  <br>
+         
+                               Le visage de ce masque africain est orné de nombreux cauris au niveau de la coiffe. <br> 
+         
+                               Ces masques sont utilisés pour les divertissement lors de danses ou de chants. <br>
+         
+                               Les plus impressionnants d'entre eux font régner la paix dans les village dés leurs apparition. <br>
+                             </p>
+         
+                             <a href="../pages/pageIndividuelle/dan.html" class="VoirPlus">Voir Plus</a>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                    
+               </section>
+           </article> 
+
+        </section>
+        <div id="item-1-2">
+          <h5>Item 1-2</h5>
+          <p>...</p>
+        </div>
+        <div id="item-2">
+          <h4>Item 2</h4>
+          <p>...</p>
+        </div>
+        <div id="item-3">
+          <h4>Item 3</h4>
+          <p>...</p>
+        </div>
+        <div id="item-3-1">
+          <h5>Item 3-1</h5>
+          <p>...</p>
+        </div>
+        <div id="item-3-2">
+          <h5>Item 3-2</h5>
+          <p>...</p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+    </main>
+   
+
+   
+  
+
+     
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      const myModal = document.getElementById('myModal')
+  const myInput = document.getElementById('myInput')
+
+  myModal.addEventListener('shown.bs.modal', () => {
+    myInput.focus()
+  })
+</script>
+    <script>
+            document.querySelectorAll('#nav-tab>[data-bs-toggle="tab"]').forEach(el => {
+        el.addEventListener('shown.bs.tab', () => {
+          const target = el.getAttribute('data-bs-target')
+          const scrollElem = document.querySelector(`${target} [data-bs-spy="scroll"]`)
+          bootstrap.ScrollSpy.getOrCreateInstance(scrollElem).refresh()
+        })
+      })
+    </script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

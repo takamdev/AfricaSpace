@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AfricaSpace</title>
+    <link rel="icon" href="../../img/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/lib/all.min.css">
+    <link rel="stylesheet" href="../../css/framwork/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/pageIndividuelle/individuelle.css">
+    
+</head>
+<body>
+  
+<!-- Modal pour la connexion -->
+<div class="modal fade modal-xl" id="connexion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Se Connecter</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div  class="modal-body">
+        
+        <form>
+          <h1>Connecter-vous</h4>
+          <div>
+             <a href="#"><i class="fa-brands fa-google"></i></a>
+             <a href="#"><i class="fa-brands fa-facebook"></i></a>
+             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+             <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <p>entrez vos information personnelle pour vous connecter</p>
+          <input type="email" id="name" placeholder="toto@example.com"  required>
+          <input type="password" id="password" placeholder="entrez le mot de passe" style="margin-top: 20px;" required>
+          <label class="d-flex gap-3"><button class="redirigerConnexion" type="button" data-bs-toggle="modal"  data-bs-target="#creationDeCompte">vous n`avez pas de compte?</button><a href="../index.html">Acceuil</a></label>
+          <button class="soumet" type="submit">Connexion</button>   
+          </form>
+      </div>
+      <button type="button" class="btn btn-dark ms-auto me-1 mb-1" data-bs-dismiss="modal" style="width: 100px;">Fermer</button>
+    </div>
+  </div>
+</div>
+
+<!-- modal pour la creation de compte -->
+
+<div class="modal fade modal-xl" id="creationDeCompte" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Cree un Compte</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div  class="modal-body">
+        
+        <form>
+          <h1>Cree Un Compte</h4>
+          <div>
+             <a href="#"><i class="fa-brands fa-google"></i></a>
+             <a href="#"><i class="fa-brands fa-facebook"></i></a>
+             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+             <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <P>entrez vos information personnelle pour cree le Compte</P>
+          <input type="text" id="name" placeholder="entrez votre nom" style="margin-top: 20px;" required>
+          <input type="text" id="UserName" placeholder="Choisir un nom d`utilisateur" required>
+          <input type="email" id="email" placeholder="toto@example.com" required>
+          <input type="password" id="password" placeholder="creez un mot de passe" required>
+          <input type="password" id="password" placeholder="repeter le mot de passe" required>
+          <label class="d-flex gap-3"><button class="redirigerConnexion" type="button" data-bs-toggle="modal"  data-bs-target="#connexion">vous avez deja un compte?</button><a href="../index.html">Acceuil</a></label>
+         
+          <button class="soumet" type="submit">Inscription</button>   
+          </form>
+        
+  
+      </div>
+      <button type="button" class="btn btn-dark ms-auto me-1 mb-1" data-bs-dismiss="modal" style="width: 100px;">Fermer</button>
+    </div>
+  </div>
+</div>
+
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid w-100">
+        <a class="navbar-brand" href="#"><img src="../../img/logo.png" style="width: 70px;" alt="image"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler"><i class="fa-solid fa-bars" style="color: yellow; transform: scale(2);"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto  mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link " href="../../index.html">Acceuil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../oeuvre.html">Oeuvres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown ms-3">
+                <a class=" nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Espace Artiste
+                </a>
+                <ul class="dropdown-menu" style="background-image: url(../../img/PSX_20210915_191533-1.jpg);">
+                  <li><!-- Button trigger modal -->
+                    <button type="button" class="dropdown-item" data-bs-toggle="modal"  data-bs-target="#connexion" >
+                     Se Connecter
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="dropdown-item" data-bs-toggle="modal"  data-bs-target="#creationDeCompte" >
+                     Cree un Compte
+                     </button>
+                  </li>
+                </ul>
+            </li>
+
+            </ul>
+        
+            <input class="form-control ms-3" list="datalistOptions" id="exampleDataList" placeholder="recherche par: titre,style artistitique ...">
+            <datalist id="datalistOptions">
+                <option value="MASQUE AFRICAIN De Cote D`Ivoire">
+                <option value="L’île Heureuse by Mahmoud said">
+                <option value="Sculture">
+                <option value="peinture">
+                
+                
+                
+            </datalist>
+           <button class="btn text-white fw-bold fs-2">search</button>
+          
+           
+        </div>
+        
+        </div>
+        <i class="panier fa-solid fa-cart-shopping"></i>
+    </nav>
+    
+</header>  
+
+    <section class="container ms-auto me-auto">
+        <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../../img/masque/marque2.jpg" class="img-fluid rounded-start" alt="image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title fw-bold ms-5">MASQUE AFRICAIN BAOULE LUNAIRE (CÔTE D'IVOIRE)</h4>
+                  <p class="card-text">Masque en bois patiné.</p>
+                  <p class="card-text">
+                    Cette sculpture représente un personnage portant 2 masques Baoulés qui font référence au soleil avec <br>
+
+                    des triangles blancs en kaolin qui font ressortir les rayons sur leur périphéries. <br>
+
+                    Chacun des masques , ornés d'un visage, est surmonté de cornes de buffle (symbole de fertilité). <br>
+                  </p>
+
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="detaille">
+          <h6 class="fw-bold" style="font-size: 20px; line-height: 40px; margin-top: 100px; margin-right: 20px;">Pays : Côte d'Ivoire <br>
+            Ethnie : Baoulé <br>
+            Ancienneté : estimé à 30 ans</h6>
+            <p>
+              <span class="fs-5">
+                Hauteur :  105 cm <br>
+
+                Largeur :   30 cm <br>
+
+                Profondeur : 18 cm <br>
+
+                Poids :  3,100 kg <br><br>
+                                  
+
+                ref : mab 586<br>
+              </span>
+
+            <span class="fs-3 mt-5 mb-5"> 292 500 F</span> <br>
+
+            <span class="fs-6">
+              TTC, frais de port offerts dans certains pays <br> <br>
+
+              Frais de port offerts dans les pays suivants: Albanie, Andorre, Autriche, Bélarus, Belgique, <br>
+              Bosnie-Herzégovine, Bulgarie, Chypre, Serbie-et-Monténégro, Suisse Autres pays <br> <br>
+
+            <span class="mt-5 mb-5"> <i class="fa-solid fa-weight-hanging"></i>6 kg &nbsp;&nbsp;&nbsp;  <i class="fa-solid fa-check"></i>disponible &nbsp;&nbsp;&nbsp;  <i class="fa-solid fa-clock"></i>3 à 7 jours de délai de livraison </span>
+            </span>
+            </p>
+           
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Commentaire</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="validation">
+            <p> NOTE:
+              <span class="etoile" onclick="etat()">★</span>
+              <span class="etoile" onclick="etat()">★</span>
+              <span class="etoile" onclick="etat()">★</span>
+              <span class="etoile" onclick="etat()">★</span>
+              <span class="etoile" onclick="etat()">★</span>
+            </p>
+            <button class="ajoutPanier" >Ajouter au Panier</button>
+          </div>
+          <div class="footer container-fluid">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                 <img src="../../img/logo.png" alt="image" style="width: 70px;">
+                </a>
+                <span class="mb-3 mb-md-0  fw-bold text-white">&copy; ART AFRICAIN - MASQUES D'AFRIQUE <i>2023</i> </span>
+              </div>
+              <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="../../index.html" class="nav-link px-2">Acceuil</a></li>
+                <li class="nav-item"><a href="../oeuvre.html" class="nav-link px-2">Oeuvres</a></li>
+                <li class="nav-item"><button type="button" data-bs-toggle="modal"  data-bs-target="#creationDeCompte" >
+                  Cree un Compte
+                  </button>
+                </li>
+                <li class="nav-item"><a href="../contact.html" class="nav-link px-2">Contact</a></li>
+              </ul>
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-twitter" style="color: white;"></i></svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram" style="color: white;"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-facebook" style="color: white;"></i></a></li>
+              </ul>
+            </footer>
+          </div>
+      
+    </section>
+
+
+    <script>
+      const myModal = document.getElementById('myModal')
+  const myInput = document.getElementById('myInput')
+
+  myModal.addEventListener('shown.bs.modal', () => {
+    myInput.focus()
+  })
+</script>
+    <script src="../../js/all.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
