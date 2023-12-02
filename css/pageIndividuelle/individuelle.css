@@ -192,6 +192,7 @@ body .validation p {
 body .validation p .etoile {
   cursor: pointer;
   transform: scale(2);
+  color: black;
 }
 body .detaille {
   display: flex;
