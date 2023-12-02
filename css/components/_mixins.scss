@@ -1,9 +1,20 @@
+body{
+    .modal-content{
+        background-image: url(../../img/PSX_20210915_191533-1.jpg);
 
+        .modal-title{
+            color: white;
+        }
+        .btn-close{
+            color: white;
+        }
+    }
+}
 
 .modal-body{
-    background-color: rgb(173, 151, 123);
-    background-image: url(../../img/PSX_20210915_191533-1.jpg);
-    margin-left: 20%;
+    
+    
+    margin-left: 17%;
     max-width: 1500px;
     height: auto;
     width: 50%;
