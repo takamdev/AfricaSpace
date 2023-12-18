@@ -120,7 +120,7 @@
 
             </ul>
         
-            <input class="form-control ms-3" list="datalistOptions" id="exampleDataList" placeholder="recherche par: titre,style artistitique ...">
+            <input disabled class="form-control ms-3" list="datalistOptions" id="exampleDataList" placeholder="recherche par: titre,style artistitique ...">
             <datalist id="datalistOptions">
                 <option value="MASQUE AFRICAIN De Cote D`Ivoire">
                 <option value="L’île Heureuse by Mahmoud said">
@@ -130,7 +130,7 @@
                 
                 
             </datalist>
-           <button class="btn text-white fw-bold fs-2">search</button>
+           <button disabled class="btn text-white fw-bold fs-2 border-0">search</button>
           
            
         </div>
@@ -141,8 +141,8 @@
     
 </header>  
 
-    <section class="container ms-auto me-auto">
-        <div class="card mb-3">
+    <section class="container-fluid ms-auto me-auto">
+        <div class="card mb-3 container">
             <div class="row g-0">
               <div class="col-md-4">
                 <img src="../../img/masque/masque1.jpg" class="img-fluid rounded-start" alt="image">
@@ -164,7 +164,7 @@
               </div>
             </div>
           </div>
-          <div class="detaille">
+          <div class="detaille container">
           <h6 class="fw-bold" style="font-size: 20px; line-height: 40px; margin-top: 100px; margin-right: 20px;">Pays : Côte d'Ivoire <br>
             Ethnie : Sénoufo <br>
             Ancienneté : estimé à 30 ans</h6>
@@ -196,11 +196,11 @@
             </p>
             
           </div>
-          <div class="mb-3">
+          <div class="mb-3 container">
             <label for="exampleFormControlTextarea1" class="form-label">Commentaire</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <div class="validation">
+          <div class="validation container">
             <p> NOTE:
               <span id="etoile1" class="etoile" onclick="etat1()">★</span>
               <span id="etoile2" class="etoile" onclick="etat2()">★</span>

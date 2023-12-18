@@ -22,19 +22,19 @@
       </div>
       <div  class="modal-body">
         
-        <form>
-          <h1>Connecter-vous</h4>
-          <div>
-             <a href="#"><i class="fa-brands fa-google"></i></a>
-             <a href="#"><i class="fa-brands fa-facebook"></i></a>
-             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-             <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          </div>
-          <p>entrez vos information personnelle pour vous connecter</p>
-          <input type="email" id="name" placeholder="toto@example.com"  required>
-          <input type="password" id="password" placeholder="entrez le mot de passe" style="margin-top: 20px;" required>
-          <label class="d-flex gap-3"><button class="redirigerConnexion" type="button" data-bs-toggle="modal"  data-bs-target="#creationDeCompte">vous n`avez pas de compte?</button><a href="../index.html">Acceuil</a></label>
-          <button class="soumet" type="submit">Connexion</button>   
+          <form>
+            <h4>Connecter-vous</h4>
+            <div>
+              <a href="#"><i class="fa-brands fa-google"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p>entrez vos information personnelle pour vous connecter</p>
+            <input type="email" id="name" placeholder="toto@example.com"  required>
+            <input type="password" id="password" placeholder="entrez le mot de passe" style="margin-top: 20px;" required>
+            <label class="d-flex gap-3"><button class="redirigerConnexion" type="button" data-bs-toggle="modal"  data-bs-target="#creationDeCompte">vous n`avez pas de compte?</button><a href="../index.html">Acceuil</a></label>
+            <button class="soumet" type="submit">Connexion</button>   
           </form>
       </div>
       <button type="button" class="btn btn-warning ms-auto me-1 mb-1" data-bs-dismiss="modal" style="width: 100px;">Fermer</button>
@@ -54,7 +54,7 @@
       <div  class="modal-body">
         
         <form>
-          <h1>Cree Un Compte</h4>
+          <h4>Cree Un Compte</h4>
           <div>
              <a href="#"><i class="fa-brands fa-google"></i></a>
              <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -119,7 +119,7 @@
 
             </ul>
         
-            <input class="form-control ms-3" list="datalistOptions" id="exampleDataList" placeholder="recherche par: titre,style artistitique ...">
+            <input disabled class="form-control ms-3" list="datalistOptions" id="exampleDataList" placeholder="recherche par: titre,style artistitique ...">
             <datalist id="datalistOptions">
                 <option value="MASQUE AFRICAIN De Cote D`Ivoire">
                 <option value="L’île Heureuse by Mahmoud said">
@@ -129,7 +129,7 @@
                 
                 
             </datalist>
-           <button class="btn text-white fw-bold fs-2">search</button>
+           <button disabled class="btn text-white fw-bold fs-2 border-0">search</button>
           
            
         </div>
@@ -140,8 +140,8 @@
     
 </header>  
 
-    <section class="container ms-auto me-auto">
-        <div class="card mb-3">
+    <section class="container-fluid ">
+        <div class="card mb-3 container">
             <div class="row g-0">
               <div class="col-md-4">
                 <img src="../../img/masque/marque2.jpg" class="img-fluid rounded-start" alt="image">
@@ -163,7 +163,7 @@
               </div>
             </div>
           </div>
-          <div class="detaille">
+          <div class="detaille container">
           <h6 class="fw-bold" style="font-size: 20px; line-height: 40px; margin-top: 100px; margin-right: 20px;">Pays : Côte d'Ivoire <br>
             Ethnie : Baoulé <br>
             Ancienneté : estimé à 30 ans</h6>
@@ -194,11 +194,11 @@
             </p>
            
           </div>
-          <div class="mb-3">
+          <div class="mb-3 container">
             <label for="exampleFormControlTextarea1" class="form-label">Commentaire</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <div class="validation">
+          <div class="validation container">
             <p> NOTE:
               <span id="etoile1" class="etoile" onclick="etat1()">★</span>
               <span id="etoile2" class="etoile" onclick="etat2()">★</span>
@@ -227,7 +227,7 @@
                 <li class="nav-item"><a href="../contact.html" class="nav-link px-2">Contact</a></li>
               </ul>
               <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-twitter" style="color: white;"></i></svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-twitter" style="color: white;"></i></a></li>
                 <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram" style="color: white;"></i></a></li>
                 <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-facebook" style="color: white;"></i></a></li>
               </ul>

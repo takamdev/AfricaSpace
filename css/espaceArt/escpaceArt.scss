@@ -1,0 +1,15 @@
+@import "../components/mixins";
+main{
+   
+    .imgArtiste1,.imgArtiste2{
+        
+        width: 500px;
+        height: 500px;
+        background-color: antiquewhite;
+    }
+
+   article img{
+        width: 500px;
+        height: 500px;
+    }
+}
