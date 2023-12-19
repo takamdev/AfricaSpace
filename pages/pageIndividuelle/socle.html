@@ -138,6 +138,7 @@
         
         </div>
         <i class="panier fa-solid fa-cart-shopping"></i>
+        <p class="text-white nombrePieces">0</p>
     </nav>
     
 </header>  
@@ -211,13 +212,14 @@
           </div>
           <div class="validation container">
             <p> NOTE:
-              <span class="etoile">★</span>
-              <span class="etoile">★</span>
-              <span class="etoile">★</span>
-              <span class="etoile">★</span>
-              <span class="etoile">★</span>
+              <span id="etoile1" class="etoile" onclick="etat1()">★</span>
+              <span id="etoile2" class="etoile" onclick="etat2()">★</span>
+              <span id="etoile3" class="etoile" onclick="etat3()">★</span>
+              <span id="etoile4" class="etoile" onclick="etat4()">★</span>
+              <span id="etoile5" class="etoile" onclick="etat5()">★</span>
             </p>
-            <button class="ajoutPanier" >Ajouter au Panier</button>
+            <button class="ajoutPanier" type="button" >Ajouter au Panier</button>
+           
           </div>
           
            
@@ -258,7 +260,7 @@
     })
       
     </script>
-    <script src="../../js/etoile.js"></script>
+    <script src="../../js/interac.js"></script>
     <script src="../../js/all.min.js"></script>
     <script src="../../js/bootstrap.bundle.min.js"></script>
     

@@ -123,3 +123,9 @@ function etat5() {
       e5.style.color = "black";
    }
 }
+
+let ajoutPanier = document.querySelector('.ajoutPanier')
+let validation = document.querySelector('.validation')
+let nombrePieces = document.querySelector('.nombrePieces')
+let compteur = 0
+
