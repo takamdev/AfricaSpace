@@ -1,3 +1,7 @@
+document.querySelector('head').innerHTML+=`<link rel="stylesheet" href="../../css/lib/animate.min.css">`
+
+
+
 function etat1() {
    let e1 = document.getElementById("etoile1");
    let e2 = document.getElementById("etoile2");
@@ -124,8 +128,25 @@ function etat5() {
    }
 }
 
-let ajoutPanier = document.querySelector('.ajoutPanier')
-let validation = document.querySelector('.validation')
-let nombrePieces = document.querySelector('.nombrePieces')
-let compteur = 0
+let ajoutPanier = document.querySelector(".ajoutPanier");
+let validation = document.querySelector(".validation");
+let nombrePieces = document.querySelector(".nombrePieces");
+let compteur = 0;
+
+ajoutPanier.addEventListener("click", () => {
+   compteur++;
+   nombrePieces.textContent = compteur;
+   if (compteur === 5) {
+      validation.innerHTML += `<p class="animate__animated animate__flash  text-danger display-6 erreurNmbreArti">vous ne pouvez pas acheter plus de 5 oeuvres d'art</p>`;
+      //
+      setTimeout(() => {
+         compteur = 0;
+         nombrePieces.textContent = compteur;
+         location.reload()
+      }, 2000);
+   }
+   
+
+  
+});
 
