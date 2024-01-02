@@ -1,24 +1,41 @@
 @import "../components/mixins";
-
+@import "../components/mixinPanier";
 body{
     position: relative;
     width: 100%;
     height: 100vh;
     align-items: center;
+    background-image: url(../../img/PSX_20210915_191533-1.jpg)
    
-  
   }
-  
-  
-  
+  iframe{
+    background-image:initial;
+  }
+  header{
+    @extend .headerStyle;
+  }
+ 
   .form-setting{
-    background: rgba(255,255, 255, 0.3);
-    margin: auto 200px;
-    padding: 2rem;
+    background-image: inherit;
+   
+   
     border-radius: 10px;
+    input,textarea{
+
+      outline: none;
+    }
+    textarea{
+      height: 70px;
+    }
+    input{
+      height: 40px;
+    }
+   button{
+    width: 100px;
+   }
   }
   
-  
+ 
   
   @media screen and (max-width: 500px){
       .card-container{
@@ -28,5 +45,9 @@ body{
       }
     .form-set{
       right: 5px;
+    }
+    iframe{
+      background-image:initial;
+      height: 200px;
     }
   }
