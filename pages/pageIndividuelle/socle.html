@@ -85,7 +85,7 @@
   <header class="fixed-top">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid w-100">
-        <a class="navbar-brand" href="#"><img src="../../img/logo.png" style="width: 70px;" alt="image"></a>
+        <a class="navbar-brand" href="./../../index.html"><img src="../../img/logo.png" style="width: 70px;" alt="image"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler"><i class="fa-solid fa-bars" style="color: yellow; transform: scale(2);"></i></span>
         </button>
@@ -131,7 +131,8 @@
                 
                 
             </datalist>
-           <button disabled class="btn text-white fw-bold fs-2 border-0">search</button>
+            <a href="#" class="iconSeach"><i class="fa-solid fa-magnifying-glass" style="color: black;"></i></a>
+
           
            
         </div>
@@ -169,7 +170,16 @@
                     Les plus impressionnants d'entre eux font régner la paix dans les villages dés leurs apparition <br>
                   </p>
 
-                 
+                  <div class="validation container">
+                    <p> NOTE:
+                      <span class="etoile">★</span>
+                      <span class="etoile">★</span>
+                      <span class="etoile">★</span>
+                      <span class="etoile">★</span>
+                      <span class="etoile">★</span>
+                    </p>
+                    <button class="ajoutPanier " >Ajouter au Panier</button>
+                  </div>
                   
                 </div>
               </div>
@@ -210,17 +220,7 @@
             <label for="exampleFormControlTextarea1" class="form-label">Commentaire</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <div class="validation container">
-            <p> NOTE:
-              <span id="etoile1" class="etoile" onclick="etat1()">★</span>
-              <span id="etoile2" class="etoile" onclick="etat2()">★</span>
-              <span id="etoile3" class="etoile" onclick="etat3()">★</span>
-              <span id="etoile4" class="etoile" onclick="etat4()">★</span>
-              <span id="etoile5" class="etoile" onclick="etat5()">★</span>
-            </p>
-            <button class="ajoutPanier" type="button" >Ajouter au Panier</button>
-           
-          </div>
+          
           
            
           <div class=" footer container-fluid mb-0">
