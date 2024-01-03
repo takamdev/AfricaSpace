@@ -48,14 +48,19 @@ header .navbar button.dropdown-item:hover {
   color: yellow;
 }
 
-body .validation p {
+body .validation p:nth-child(1) {
   display: flex;
   gap: 30px;
 }
-body .validation p .etoile {
+body .validation p:nth-child(1) .etoile {
   cursor: pointer;
   transform: scale(2);
   color: black;
+}
+body .validation p:nth-child(2) {
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 body .modal-content {
   background-image: url(../../img/PSX_20210915_191533-1.jpg);
@@ -268,7 +273,6 @@ body .modal-content .btn-close {
   }
   main .ajoutPanier {
     width: 150px;
-    margin-left: 27%;
   }
   main .img-fluid {
     width: 100%;
