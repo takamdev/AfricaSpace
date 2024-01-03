@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,700;1,900&display=swap');
 @import "../components/mixins";
+@import "../components/mixinPanier";
 
 header{
     @extend .headerStyle;
@@ -60,7 +61,7 @@ main{
      }
     main{
         margin-left: 0;
-        
+       
     }
    
      
@@ -83,7 +84,7 @@ main{
         
         .ajoutPanier{
             width: 150px;
-            margin-left: 27%;
+           
         }
         .img-fluid{
             width: 100%;

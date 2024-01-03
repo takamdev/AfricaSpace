@@ -60,7 +60,9 @@ header{
 
 body{
     .validation{
-        p{
+
+        
+        p:nth-child(1){
             display: flex;
             gap: 30px;
            .etoile{
@@ -71,6 +73,12 @@ body{
             
            }
         }
+        p:nth-child(2){
+           margin: 0;
+           padding: 0;
+           display: flex;
+        }
+        
         
     }
     .modal-content{
