@@ -1,4 +1,4 @@
-
+let containPanier = document.querySelector('.contenurdupanier')
 // ont recupere tout le bouttons ajouter au panier
 let ajoutPanier = document.querySelectorAll(".ajoutPanier");
 // ont recuperer le chiffre du compte de contenue dans le panier
@@ -6,15 +6,38 @@ let nombrePieces = document.querySelector(".nombrePieces");
 let compteur = 0;
 
 // COMPTEUR DU NOMBRE D4ATICLE DANS LE PANIER
-
 // parcours de tout les bouttons ajouter au panier
 ajoutPanier.forEach((Element) => {
+   
    //ajout d'un ecouteur sur chaque boutton
    Element.addEventListener("click", () => {
       compteur++;
       nombrePieces.textContent = compteur;
+
+      let nomOeuvres = Element.parentNode.parentNode.parentNode.children[1].textContent
+     
+      let  prixOeuvre =Element.parentNode.parentNode.parentNode.children[2].querySelector('span').textContent
+      let prixOeuvrePretPourCalcul =Element.parentNode.parentNode.parentNode.children[2].querySelector('span').textContent.replaceAll(' ','').replace('F','')*1
+      containPanier.innerHTML+= `<p class="commande text-center  text-white fw-bold" >${nomOeuvres}  &nbsp; prix:<span>${prixOeuvre}</span> &nbsp; <img class="imgRemovepanier" src="../img/imgRemovePanier/minimiser-le-signe.png" alt="image" width="33" ></p>`
+     
+      let total =  parseInt(containPanier.children[0].querySelector('span').textContent)+prixOeuvrePretPourCalcul
+      containPanier.children[0].querySelector('span').textContent=`${total}F`
+
+      let commandes = document.querySelectorAll('.contenurdupanier .commande')
+      commandes.forEach(commande=>{
+         commande.querySelector('img').addEventListener('click',()=>{
+            compteur--;
+            nombrePieces.textContent = compteur;
+            let prixcal = commande.querySelector('span').textContent.replaceAll(' ','').replace('F','')*1
+            let total =  parseInt(containPanier.children[0].querySelector('span').textContent)-prixcal
+            containPanier.children[0].querySelector('span').textContent=`${total}F`
+            commande.remove()
+        })
+      })
    });
 });
+
+
 
 // recuperer tout les p qui contiennent les etoilles
 let PEtoiles = document.querySelectorAll(".validation p:nth-child(1)");
@@ -27,7 +50,6 @@ PEtoiles.forEach((PEtoiles) => {
       etoille.classList.add('couleur2')
       //ajout d'un ecouteur sur chaque etoille
       etoille.addEventListener("click", () => {
-        
          if (etoilles.indexOf(etoille) === 0) {
             if (
                getStyle(etoilles[1]) === true &&
