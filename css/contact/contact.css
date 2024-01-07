@@ -352,6 +352,15 @@ iframe {
   width: 100px;
 }
 
+@media screen and (max-width: 980px) {
+  header nav .panier {
+    top: 27px;
+    margin-right: -5px;
+  }
+  header nav .nombrePieces {
+    right: 85px;
+  }
+}
 @media screen and (max-width: 500px) {
   .card-container {
     flex-direction: column;
