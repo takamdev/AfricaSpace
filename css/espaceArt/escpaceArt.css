@@ -148,6 +148,7 @@ body .modal-content .btn-close {
   color: white;
   border: none;
   text-decoration-line: underline;
+  width: 230px;
 }
 .modal-body form .soumet {
   color: white;
