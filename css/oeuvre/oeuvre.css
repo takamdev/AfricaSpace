@@ -205,10 +205,20 @@ body .modal-content .btn-close {
 .footer button:hover {
   color: yellow;
 }
+@media screen and (max-width: 890px) {
+  .footer button {
+    font-size: 10px;
+  }
+}
 .footer a {
   font-size: 15px;
   font-weight: bold;
   color: white;
+}
+@media screen and (max-width: 890px) {
+  .footer a {
+    font-size: 10px;
+  }
 }
 .footer a:hover {
   color: yellow;
@@ -278,7 +288,7 @@ body .modal-content .btn-close {
 }
 
 @media screen and (max-width: 992px) {
-  .panier {
+  header .panier {
     position: absolute;
     top: 25px;
     right: 100px;
@@ -287,7 +297,7 @@ body .modal-content .btn-close {
     margin-right: 30px;
     color: yellow;
   }
-  .nombrePieces {
+  header .nombrePieces {
     text-align: center;
     position: absolute;
     top: 20px;
