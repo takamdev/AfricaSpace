@@ -206,7 +206,7 @@ body .modal-content .btn-close {
 }
 @media screen and (max-width: 890px) {
   .footer button {
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 .footer a {
@@ -216,7 +216,7 @@ body .modal-content .btn-close {
 }
 @media screen and (max-width: 890px) {
   .footer a {
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 .footer a:hover {
