@@ -10,7 +10,6 @@ header{
     
 }
 
-
 body{
     font-family: 'Roboto', sans-serif;
 
@@ -38,9 +37,17 @@ body{
    }
   
 }
-@media screen and (max-width:767px) {
-    
-    
-   
-     
+@media screen and (max-width:980px) {
+    .panier{
+       
+        top: 27px;
+        margin-right: -5px; 
+        
+    }
+    .nombrePieces{
+        
+        right: 85px;
+       
+       
+    }
 }

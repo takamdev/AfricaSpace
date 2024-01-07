@@ -11,7 +11,23 @@
    
 </head>
 <body>
-  
+    <!-- Modal pour le panier -->
+<div class="modal fade modal-xl"  id="panier" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
+  <div class="modal-dialog " >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Contenue du panier</h1>
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="contenurdupanier">
+       <p  class="display-4 d-flex  justify-content-end me-5  text-warning fw-bold text-decoration-underline">Total: <span>0</span></p>
+      
+      </div>
+      <button type="button" class="btn btn-warning ms-auto me-1 mb-1" data-bs-dismiss="modal" style="width: 100px;">Fermer</button>
+    </div>
+  </div>
+</div>
+
 <!-- Modal pour la connexion -->
 <div class="modal fade modal-xl"  id="connexion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
   <div class="modal-dialog " >
@@ -135,7 +151,7 @@
         </div>
         
         </div>
-        <i class="panier fa-solid fa-cart-shopping"></i>
+        <i class="panier fa-solid fa-cart-shopping" data-bs-toggle="modal" data-bs-target="#panier"></i>
         <p class="text-white nombrePieces">0</p>
     </nav>
     
@@ -159,6 +175,7 @@
                     Ces masques sont utilisés pour les divertissement lors de danses ou de chants. <br>
 
                     Les plus impressionnants d'entre eux font régner la paix dans les village dés leurs apparition. <br>
+                    <span class="fs-3 mt-5 mb-5"> 152 750 F</span>
                   </p>
 
                   <div class="validation container">
@@ -169,7 +186,7 @@
                       <span class="etoile" >★</span>
                       <span class="etoile" >★</span>
                     </p>
-                    <button type="button" class="ajoutPanier " >Ajouter au Panier</button>
+                    <p>  <button type="button" class="ajoutPanier " >Ajouter au Panier</button></p>
                   </div>
                 </div>
               </div>
