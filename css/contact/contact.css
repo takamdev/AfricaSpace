@@ -335,6 +335,10 @@ iframe {
   background-image: initial;
 }
 
+form button {
+  width: 100px;
+}
+
 .form-setting {
   background-image: inherit;
   border-radius: 10px;
@@ -347,9 +351,6 @@ iframe {
 }
 .form-setting input {
   height: 40px;
-}
-.form-setting button {
-  width: 100px;
 }
 
 @media screen and (max-width: 980px) {

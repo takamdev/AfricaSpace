@@ -10,6 +10,24 @@
     <link rel="stylesheet" href="../css/lib/all.min.css">
 </head>
 <body>
+
+  <!-- Modal pour le panier -->
+  <div class="modal fade modal-xl"  id="panier" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
+    <div class="modal-dialog " >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Contenue du panier</h1>
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="contenurdupanier">
+         <p  class="display-4 d-flex  justify-content-end me-5  text-warning fw-bold text-decoration-underline">Total: <span>0</span></p>
+        
+        </div>
+        <button type="button" class="btn btn-warning ms-auto me-1 mb-1" data-bs-dismiss="modal" style="width: 100px;">Fermer</button>
+      </div>
+    </div>
+  </div>
+  
     <!-- Modal pour la connexion -->
 <div class="modal fade modal-xl"  id="connexion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
     <div class="modal-dialog " >
@@ -134,7 +152,7 @@
            
         </div>
         </div>
-        <i class="panier fa-solid fa-cart-shopping"></i>
+        <i class="panier fa-solid fa-cart-shopping" data-bs-toggle="modal" data-bs-target="#panier" ></i>
         <p class="text-white nombrePieces">0</p>
     </nav>
     
@@ -178,19 +196,17 @@
         <div class="mb-3 form-setting d-flex flex-column gap-3">
 
           
-          <input type="text" placeholder="name">
+          <input type="text" placeholder="name" required>
 
          
-          <input type="email" id="email" placeholder="email">
+          <input type="email" id="email" placeholder="email" required>
 
           
-          <input type="text" placeholder="Subject">
+          <input type="text" placeholder="Subject" required>
 
           <textarea id="message" cols="30" row="3" placeholder="Message"></textarea>
-          <button type="submit" class="btn bg-warning text-black"> Envoyer</button>
-            
         </div>
-        
+        <button type="submit" class="btn bg-warning text-black"> Envoyer</button>
     </form>
     <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3545.4988816946952!2d9.768624483598508!3d4.0838194342492224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10610d1e2deb8a71%3A0xa0c981d370e1d73f!2sMa%20Dou%20R%C3%A9sidence!5e0!3m2!1sfr!2scm!4v1701536901028!5m2!1sfr!2scm" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -233,6 +249,7 @@ myModal.addEventListener('shown.bs.modal', () => {
   myInput.focus()
 })
 </script>
+    <script src="../js/contact.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/all.min.js"></script>
 </body>
