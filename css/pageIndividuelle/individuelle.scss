@@ -38,16 +38,20 @@ body{
   
 }
 @media screen and (max-width:980px) {
-    .panier{
-       
-        top: 27px;
-        margin-right: -5px; 
-        
-    }
-    .nombrePieces{
-        
-        right: 85px;
-       
-       
+    header{
+
+        nav{
+            .panier{
+                top: 27px;
+                margin-right: -5px; 
+                
+            }
+            .nombrePieces{
+                right: 85px;
+               
+               
+            }
+
+        }
     }
 }
