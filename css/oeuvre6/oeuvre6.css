@@ -6,6 +6,16 @@
   color: black !important;
 }
 
+.erreurSearch {
+  color: red;
+}
+@media screen and (max-width: 998px) {
+  .erreurSearch {
+    position: absolute;
+    top: 230px !important;
+  }
+}
+
 .commande {
   margin-left: -300px;
 }
