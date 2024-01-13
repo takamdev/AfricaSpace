@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/index/index.css">
     <link rel="stylesheet" href="css/lib/all.min.css">
     <link rel="stylesheet" href="css/framwork/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/animate.min.css">
    
     
 </head>
@@ -90,80 +91,81 @@
 
 
 
+<header>
 
+  <nav class="navbar navbar-expand-lg container-fluid">
+      <div class="container-fluid w-100">
+      <a class="navbar-brand" href="#"><img src="img/logo.png" style="width: 70px;" alt="image"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler"><i class="fa-solid fa-bars" style="color: yellow; transform: scale(2);"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+              <a class="nav-link " href="#">Acceuil</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="pages/oeuvre.html">Oeuvres</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="pages/contact.html">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class=" nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Espace Artiste
+              </a>
+              <ul class="dropdown-menu" style="background-image: url(img/PSX_20210915_191533-1.jpg);">
+              <li><!-- Button trigger modal -->
+                <button type="button" class="dropdown-item" data-bs-toggle="modal"  data-bs-target="#connexion" >
+                 Se Connecter
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item" data-bs-toggle="modal"  data-bs-target="#creationDeCompte" >
+                 Cree un Compte
+                 </button>
+              </li>
+              
+              </ul>
+          </li>
+          </ul>
+         
+          <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="recherche par:nom de l`artiste, titre,style artistitique ...">
+          <datalist id="datalistOptions">
+          <option value="MASQUE AFRICAIN BOUCLIER">
+          <option value="MASQUE AFRICAIN BAOULE">
+          <option value="MASQUE AFRICAIN DAN">
+          <option value="Cheval En Bronze">
+          <option value="Sculpture Cheval En Bronze">
+          <option value="Éléphant En Bronze">
+          <option value="Éléphant D’Afrique">
+          <option value="Sculture Autruche En Bronze">
+          <option value="Tabouret Ashanti">
+          <option value="Tabouret Baga">
+          <option value="Petit Tabouret Baga">
+          <option value="Chaise De Chef De Famille">
+          <option value="Chaise À Palabre">
+          <option value="Amour De La Lecture">
+          <option value="Amour Mère-Enfant">
+          <option value="Harmonie – Famille">
+          <option value="Joueur De Balafon">
+          <option value="La Ménagère">
+              
+         
+          
+          
+      
+          </datalist>
+          <a href="#" class="iconSeach" style="right: 20px;"><i class="fa-solid fa-magnifying-glass" style="color: black;"></i></a>
+         
+      </div>
+      </div>
+      
+  </nav>
+  
+</header>  
     <main class="container-fluid">
-      <header>
-
-        <nav class="navbar navbar-expand-lg container-fluid">
-            <div class="container-fluid w-100">
-            <a class="navbar-brand" href="#"><img src="img/logo.png" style="width: 70px;" alt="image"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler"><i class="fa-solid fa-bars" style="color: yellow; transform: scale(2);"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Acceuil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/oeuvre.html">Oeuvres</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="pages/contact.html">Contact</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class=" nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Espace Artiste
-                    </a>
-                    <ul class="dropdown-menu" style="background-image: url(img/PSX_20210915_191533-1.jpg);">
-                    <li><!-- Button trigger modal -->
-                      <button type="button" class="dropdown-item" data-bs-toggle="modal"  data-bs-target="#connexion" >
-                       Se Connecter
-                      </button>
-                    </li>
-                    <li>
-                      <button type="button" class="dropdown-item" data-bs-toggle="modal"  data-bs-target="#creationDeCompte" >
-                       Cree un Compte
-                       </button>
-                    </li>
-                    
-                    </ul>
-                </li>
-                </ul>
-            
-                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="recherche par:nom de l`artiste, titre,style artistitique ...">
-                <datalist id="datalistOptions">
-                <option value="MASQUE AFRICAIN BOUCLIER">
-                <option value="MASQUE AFRICAIN BAOULE">
-                <option value="MASQUE AFRICAIN DAN">
-                <option value="Cheval En Bronze">
-                <option value="Sculpture Cheval En Bronze">
-                <option value="Éléphant En Bronze">
-                <option value="Éléphant D’Afrique">
-                <option value="Sculture Autruche En Bronze">
-                <option value="Tabouret Ashanti">
-                <option value="Tabouret Baga">
-                <option value="Petit Tabouret Baga">
-                <option value="Chaise De Chef De Famille">
-                <option value="Chaise À Palabre">
-                <option value="Amour De La Lecture">
-                <option value="Amour Mère-Enfant">
-                <option value="Harmonie – Famille">
-                <option value="Joueur De Balafon">
-                <option value="La Ménagère">
-                    
-                
-                
-                
-            
-                </datalist>
-                <a href="#" class="iconSeach" style="right: 20px;"><i class="fa-solid fa-magnifying-glass" style="color: black;"></i></a>
-               
-            </div>
-            </div>
-        </nav>
-        
-    </header>  
+      
   <div class="Acceuil container row ms-auto me-auto mt-2">
       <p class="col-sm-12 col-md-12  col-lg-12 pt-5">
        <span>Analyse : L’Afrique, dernière frontière du marché de l’art ?</span> <br>
