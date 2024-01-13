@@ -20,7 +20,7 @@ commander.addEventListener("click", () => {
       let totalprise = containPanier
          .querySelector("p:nth-child(1)")
          .cloneNode(true).textContent;
-      containCommande.innerHTML += `<span>commande en cours ${totalprise} <i class="fa-regular fa-clock fa-spin" style="color: yellow;"></i></span> </br>`;
+      containCommande.innerHTML += `<span class="fw-bolder">commande en cours ${totalprise} <i class="fa-regular fa-clock fa-spin" style="color: yellow;"></i></span> </br>`;
       containPanier.querySelector("p:nth-child(1) span").textContent = "0F";
       nombrePieces.textContent = compteur = 0;
    }
