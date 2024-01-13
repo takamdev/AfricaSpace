@@ -3,6 +3,29 @@ let containPanier = document.querySelector('.contenurdupanier')
 let ajoutPanier = document.querySelectorAll(".ajoutPanier");
 // ont recuperer le chiffre du compte de contenue dans le panier
 let nombrePieces = document.querySelector(".nombrePieces");
+let commander = containPanier.parentNode.querySelector('&>button')
+let containCommande = document.createElement('p')
+containCommande.classList.add('text-warning','containCommande')
+containCommande.style.width='200px'
+commander.before(containCommande)
+
+commander.addEventListener('click',()=>{
+  if(containPanier.children.length===1){
+   alert('le pannier est vide!!!')
+  }else{
+      let y= containPanier.querySelectorAll('p:not(:nth-child(1))')
+      y.forEach(element=>{
+         element.remove()
+      })
+      let totalprise = containPanier.querySelector('p:nth-child(1)').cloneNode(true).textContent
+      console.log(totalprise);
+   containCommande.innerHTML+=`<span>commande en cours ${totalprise} <i class="fa-regular fa-clock fa-spin" style="color: yellow;"></i></span> </br>`
+   containPanier.querySelector('p:nth-child(1) span').textContent='0F'
+   nombrePieces.textContent= compteur =0
+}
+})
+
+//<i class="fa-regular fa-clock"></i>
 let compteur = 0;
 
 // COMPTEUR DU NOMBRE D4ATICLE DANS LE PANIER
