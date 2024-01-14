@@ -210,7 +210,9 @@ iconSearch.addEventListener("click", () => {
       p.style.top='0'
       p.textContent='renseignez ce champ'
       search.before(p)
+      search.style.border='2px solid red'
       setTimeout(()=>{
+         search.style.border='1px solid black'
          search.previousElementSibling.remove()
       },2000)
    }
